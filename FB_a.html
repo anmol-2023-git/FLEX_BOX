@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Concepts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Flexbox Concepts</h1>
+  <hr>
+  <h2>1. Display : Flex</h2>
+  <p>This enables the Flexbox layout on a container.</p>
+  <div class="container">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+  </div>
+
+  <h2>2. Flex Direction</h2>
+  <p>Direction of the main axis (row by default).</p>
+  <div class="container column">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Column 3</div>
+  </div>
+
+  <h2>3. Justify Content</h2>
+  <p>Controls Alignment along the main axis (horizontal of flex-direction is row).</p>
+  <div class="container justify-center">
+    <div class="box">Center</div>
+    <div class="box">Aligned</div>
+  </div>
+  <div class="container justify-space">
+    <div class="box">Start</div>
+    <div class="box">End</div>
+  </div>
+
+  <h2>4. Align Items</h2>
+  <p>Controls alignment along the cross axis (vertical if flex-direction is row).</p>
+  <div class="container align-end align-items-demo">
+    <div class="box align-top">Top</div>
+    <div class="box align-tall">Tall</div>
+    <div class="box align-short">Short</div>
+  </div>
+
+  <h2>5. Flex Wrap</h2>
+  <p>Allows items to wrap into multiple lines.</p>
+  <div class="container wrap">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <div class="box">Box 7</div>
+    <div class="box">Box 8</div>
+  </div>
+
+  <h2>6. Gap</h2>
+  <p>Space between items (row and column gap).</p>
+  <div class="container gap-demo">
+    <div class="rectangle-box">A</div>
+    <div class="rectangle-box">B</div>
+    <div class="rectangle-box">C</div>
+  </div>
+
+  <h2>7. Flex Grow</h2>
+  <p>Defines how much a flex item will grow relative to the others.</p>
+  <div class="container">
+    <div class="box grow1">Grow 1</div>
+    <div class="box grow2">Grow 2</div>
+    <div class="box">No Grow</div>
+  </div>
+
+  <h2>8. Flex Shrink</h2>
+  <p>Defines how a flex item will shrink if necessary.</p>
+  <div class="container" style="width:260px;">
+    <div class="box shrink1" style="width:1px;">Shrink</div>
+    <div class="box shrink0" style="width:183px;">No Shrink</div>
+  </div>
+
+  <h2>9. Flex Basis</h2>
+  <p>Sets the initial size of a flex item before space is distributed.</p>
+  <div class="container">
+    <div class="box" style="flex-basis: 150px;">150px Basis</div>
+    <div class="box" style="flex-basis:auto;">Auto</div>
+  </div>
+
+  <h2>10. Order</h2>
+  <p>Controls the order in which items appear (visually).</p>
+  <div class="container">
+    <div class="box" style="order:0;">Default</div>
+    <div class="box" style="order:1;">Order 1</div>
+    <div class="box" style="order:2;">Order 2</div>
+  </div>
+
+  <h2>11. Align Self</h2>
+  <p>Overrides align-items for individual items.</p>
+  <div class="container" style="height:70px;">
+    <div class="box" style="align-self:flex-start;">Top</div>
+    <div class="box" style="align-self:center;">Center</div>
+    <div class="box" style="align-self:flex-end;">Bottom</div>
+  </div>
+</body>
+</html>
